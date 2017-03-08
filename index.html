@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>CS716: Functional Programming</title>
+
+        <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Pangolin">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="html5shiv.min.js"fonts></script>
+        <script src="respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        
+        <header id="top" class="container">
+            <h1>CS716: Functional Programming</h1>
+        </header>
+        
+        
+        <!-- containter -->
+        <div class="container">
+            
+            <div class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="navbar-brand">Home</span>
+                </div>
+                <nav class="navbar-collapse collapse">       
+                    <ul class="nav navbar-nav">  
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#about">Course Information</a></li>  
+                        <li><a href="#plan">Lecture Plan</a></li>
+                        <li><a href="#reading">Further Reading</a></li>
+                    </ul>
+                </nav>  
+            </div>
+            <div class="row">  
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <p>This course will be offered during the 2nd semester of 2017 by Brink van der Merwe. It will explain functional programming concepts by using Haskell. </p>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            
+            <div class="row" id="about">  
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h3>Why should you take this course</h3>
+                    <p>Functional programming is a style of programming in which the primary method of computation is the application of functions to arguments. It offers a compact notation for writing programs, powerful abstraction methods for structuring programs, and a simple mathematical basis that supports reasoning about programs. Functional languages represent the leading edge of programming language design, and the primary setting in which new programming concepts are introduced and studied.</p>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            
+            <div class="row" id="plan">
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h3>Lecture Plan</h3>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            
+            <!-- heading -->
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h4>Lecture 1</h4>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            <!-- content -->
+            <div class="row">
+                <!-- info -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>Read Chapters 1 and 2 of "Learn You a Haskell for Great Good"</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- reading -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <a href="http://www.seas.upenn.edu/~cis194/spring13/lectures/01-intro.html">Lecture 1 of Brent Yorgey's cis194</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- homework -->
+                <div class="col-sm-6 col-md-4 hidden-xs">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <a href="http://www.seas.upenn.edu/~cis194/spring13/hw/01-intro.pdf">Homework: Exercise 1-4 of cis194, homework 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- heading -->
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h4>Lecture 2</h4>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            <!-- content -->
+            <div class="row">
+                <!-- info -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>Read Chapters 2 and 3 of Real World Haskell.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- reading -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>No extra reading this week</p>
+                                </li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+                <!-- homework -->
+                <div class="col-sm-6 col-md-4 hidden-xs">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <a href="http://www.seas.upenn.edu/~cis194/spring13/hw/01-intro.pdf">Homework: Exercise 5 of cis194, homework 1</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.seas.upenn.edu/~cis194/spring13/hw/02-ADTs.pdf">Homework: Exercise 1-5 of cis194, homework 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- heading -->
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h4>Lecture 3</h4>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            <!-- content -->
+            <div class="row">
+                <!-- info -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>Read Chapter 7 in "Learn You a Haskell for Great Good".</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- reading -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>No extra reading this week</p>
+                                </li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+                <!-- homework -->
+                <div class="col-sm-6 col-md-4 hidden-xs">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <a href="http://www.seas.upenn.edu/~cis194/spring13/hw/03-rec-poly.pdf">Homework: Assignment 3, cis194</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- heading -->
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h4>Lecture 4</h4>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            <!-- content -->
+            <div class="row">
+                <!-- info -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>Follow the link under reading material</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- reading -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <a href="http://www.seas.upenn.edu/~cis194/spring13/lectures/04-higher-order.html">Lecture 4 of Brent Yorgey's cis194</a>
+                                </li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+                <!-- homework -->
+                <div class="col-sm-6 col-md-4 hidden-xs">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <a href="http://www.seas.upenn.edu/~cis194/spring13/hw/04-higher-order.pdf">Homework: Assignment 4, cis194, Exercises 1 and 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- heading -->
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h4>Lecture 5</h4>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            <!-- content -->
+            <div class="row">
+                <!-- info -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>Read Chapter 8 in "Learn You a Haskell for Great Good".</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- reading -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>No extra reading this week</p>
+                                </li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+                <!-- homework -->
+                <div class="col-sm-6 col-md-4 hidden-xs">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <a href="http://www.seas.upenn.edu/~cis194/spring13/hw/05-type-classes.pdf">Homework: Assignment 5, cis194, Exercises 1 - 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- heading -->
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h4>Lecture 6</h4>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            <!-- content -->
+            <div class="row">
+                <!-- info -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>Read subsection "Going Left, Then Right" on the Either type class and the LockerMap example in Chapter 7 of "Learn You a Haskell for Great Good".</p>
+                                </li>
+                                <li>
+                                    <p>Read the section on Functors in Chapter 7 on "Learn You a Haskell for Great Good".
+</p>
+                                </li>
+                                <li>
+                                    <p>Work through <a href="http://www.seas.upenn.edu/~cis194/spring13/lectures/06-laziness.html">knapsack</a> dynamic programming example using arrays and laziness.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- reading -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>No extra reading this week</p>
+                                </li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+                <!-- homework -->
+                <div class="col-sm-6 col-md-4 hidden-xs">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>No Homework assigned this week, outside of the preparation listed for this week.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- heading -->
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h4>Lecture 7: Test</h4>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            <!-- content -->
+            <div class="row">
+                <!-- info -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li><p>Define a tree type that has only one constructor. Instead of the Empty constructor, use the Maybe type to refer to a node's children.</p></li>
+                                <li><p>Make your tree type an instance of the Show, Eq and Functor type classes. Provide examples to show that your fmap function works as expected.</p></li>
+                                <li><p>Write a treeInsert function that will insert values into a tree in such a way that a binary search tree is obtained. Test your function treeInsert on a few small examples using foldr and treeInsert to build a binary search tree from a list of values.</p></li>
+                                <li><p>Modify the treeFold function at cis194 to work on your tree data type. Test the treeFold function by implementing the flatten function using treeFold and testing flatten on a few small examples.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- reading -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>No extra reading this week</p>
+                                </li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+                <!-- homework -->
+                <div class="col-sm-6 col-md-4 hidden-xs">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>No Homework assigned this week, outside of the preparation listed for this week.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- heading -->
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h4>Lecture 8</h4>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            <!-- content -->
+            <div class="row">
+                <!-- info -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>Chapter 10: Learn You a Haskell for Great Good!</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- reading -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>No extra reading this week</p>
+                                </li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+                <!-- homework -->
+                <div class="col-sm-6 col-md-4 hidden-xs">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>Homework: You should use the algorithmic idea from the London to Heathrow shortest path implementation in Chapter 10 of Learn you a Haskell for Great Good to implement the Viterbi algorithm as described at Wikipedia. Test you code on the ['Healthy', 'Healthy', 'Fever'] example at the bottom of the Wikipedia page. Note that your code should allow for arbitrary many hidden states and observations - i.e. not only 2 hidden states as in the Wikipedia example - i.e. you could have more than 2 parallel paths that you can cross over between if you think in terms of the London to Heathrow example. Find at least one more test case for your code having more than 2 hidden states. You should assume that as input you have the following as described on the Wikipedia page:</p>
+                                </li>
+                                <li><ul>
+                                    <li><p>observation space</p></li>
+                                    <li><p>state space</p></li>
+                                    <li><p>a sequence of observations</p></li>
+                                    <li><p>transition matrix</p></li>
+                                    <li><p>emission matrix</p></li>
+                                    <li><p>an array of initial probabilities</p></li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- heading -->
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h4>Lecture 9</h4>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            <!-- content -->
+            <div class="row">
+                <!-- info -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>Chapter 11: Learn You a Haskell for Great Good!</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- reading -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>No extra reading this week</p>
+                                </li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+                <!-- homework -->
+                <div class="col-sm-6 col-md-4 hidden-xs">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>Homework: Use the fact that the Either type is an instance of the Applicative typeclass (and thus the applicative programming style) to improve the RPN calculator in Chapter 10 to provide appropriate error messages when dividing by 0 or when taking the log of a non-positive number or if there are too few numerical operands when applying an operator.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- heading -->
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h4>Lecture 10</h4>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            <!-- content -->
+            <div class="row">
+                <!-- info -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>Chapter 11: Learn You a Haskell for Great Good!</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- reading -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li><p>No extra reading this week</p></li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+                <!-- homework -->
+                <div class="col-sm-6 col-md-4 hidden-xs">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>No homework, aside from preparing for the lecture</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- heading -->
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h4>Lecture 11</h4>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            <!-- content -->
+            <div class="row">
+                <!-- info -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>Chapters 11 and 12: Learn You a Haskell for Great Good!</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- reading -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>No extra reading this week</p>
+                                </li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+                <!-- homework -->
+                <div class="col-sm-6 col-md-4 hidden-xs">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>Homework: Update the homework of lecture 9 to use Monads.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- heading -->
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h4>Lecture 12</h4>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            <!-- content -->
+            <div class="row">
+                <!-- info -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>Chapter 12: Learn You a Haskell for Great Good!</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- reading -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>No extra reading this week</p>
+                                </li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+                <!-- homework -->
+                <div class="col-sm-6 col-md-4 hidden-xs">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>No homework, aside from preparing for the lecture</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- heading -->
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h4>Lecture 13: Final theory and practical test</h4>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+            <!-- content -->
+            <div class="row">
+                <!-- info -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>Instructions: Do both tests electronically and e-mail files to the lecturer once done. You may use course notes and the course textbook for the theory test. Once done with the theory part, you can start using any online resources for the practical test.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- reading -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <a href="http://www.cs.sun.ac.za/rw716/test.zip">Final theory and practical test</a>
+                                </li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+                <!-- homework -->
+                <div class="col-sm-6 col-md-4 hidden-xs">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <p>No homework :)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    
+            <div class="row" id="reading">  
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <h3>Books and other relevant links and resources</h3>
+                    <ul>
+                        <li><a href="http://book.realworldhaskell.org/">Real World Haskell</a></li>
+                        <li><a href="http://learnyouahaskell.com/">Learn You a Haskell for Great Good!</a></li>  
+                        <li><a href="https://github.com/bitemyapp/learnhaskell">Chris Allen's page on learning Haskell</a></li>
+                        <li><a href=slides/resources.html>Slides and other resources</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=mlTO510zO78li">Haskell is not for production and other tales</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=sl2zo7tzrO8">The Road to Running Haskell at Facebook Scale</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-1 col-lg-2 visible-md visible-lg">
+                </div>
+            </div>
+          
+        </div> <!-- container -->
+        <footer class="container">
+            <p>Designed by Murray Heymann</p>
+        </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
